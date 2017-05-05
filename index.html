@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__initials">
+				<strong>Вероника Ростова</strong>
+				<p>Менеджер по продажам</p>
+			</div>
+			<div class="header__status">
+				<p>Подберу для вас самые лучшие предложения.<br />Мои услуги абсолютно бесплатны</p>
+			</div>
+			<div class="header__logo">
+				<img src="images/header_logo.png">
+			</div>
+		</header>
+		<section class="services">
+			<h5>Услуг</h5>
+			<div class="services__box">
+				<div class="services__box--lists">
+					<p id="reservation">Ручное бронирование </p>
+					<p id="tours">Пакетные туры </p>
+					<p id="hotels">Отели </p>
+				</div>
+				<div class="services__box--quantity">
+					<p>11</p>
+					<p>3</p>
+					<p>1</p>
+				</div>
+			</div>
+			<div class="services__bottom">
+				<strong>Всего <span>15</span></strong>
+			</div>
+		</section>
+		<section class="comments">
+			<div class="comments__title">
+				<div class="comments__title--like">
+					<p><span><img src="images/like.png"></span>131</p>
+					<p><span><img src="images/comments.png"></span>14</p>
+				</div>
+				<div class="comments__title--review">
+					<strong>Последние отзывы</strong>
+					<a href="#" id="all_comments">Все отзывы</a>
+				</div>
+			</div>
+			<div class="comments__content" id="comm">
+				<ul id="list">
+					<li class="item_container">
+						<strong> Самуил <span> 13 октября 2011 </span></strong>
+						<section class="item_block">
+							<div class="treang"></div>
+							<p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+						</section>
+					</li>
+					<li class="item_container">
+						<strong> Лилия Семеновна <span> 14 октября 2011 </span></strong>
+						<section class="item_block">
+							<div class="treang"></div>
+							<p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+						</section>
+					</li>
+					<li class="item_container">
+						<strong> Лилия Семеновна <span> 14 октября 2011 </span></strong>
+						<section class="item_block">
+							<div class="treang"></div>
+							<p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+						</section>
+					</li>
+				</ul>
+				<form action="#" id="add-message">
+					<input type="text" id="gretta" placeholder="Автор комментария">
+					<textarea name="" id="numd" cols="30" rows="10" placeholder="Комментарий..."></textarea>
+					<input type='button' value='Написать консультанту' onclick='elCreate()'/>
+				</form>
+			</div>
+		</section>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+

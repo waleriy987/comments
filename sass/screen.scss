@@ -1,0 +1,338 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+*{
+	box-sizing: border-box;
+}
+
+
+.wrapper{
+	padding: 17px 0 34px;
+	max-width: 448px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.header{
+	position: relative;
+	overflow: hidden;
+	height: 122px;
+
+	&__initials{
+		max-width: 300px;
+		width: 100%;
+		float: right;
+		text-align: left;
+		padding-top: 10px;
+
+		&>strong{
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: bold;
+		}
+
+		&>p{
+			font-size: 12px;
+			line-height: 14px;
+			margin: 10px 0;
+		}
+	}
+
+	&__status{
+		max-width: 400px;
+		width: 100%;
+		float: right;
+		text-align: left;
+		padding: 10px 0 10px 103px;
+		background-color: #fffbc8;
+
+		&>p{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	&__logo{
+		width: 120px;
+		height: 122px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.services{
+	float: right;
+	max-width: 317px;
+	width: 100%;
+	margin-bottom: 30px;
+
+	&>h5{
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	&__box{
+
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 15px 0;
+
+		&--quantity{
+
+			&>p{
+				height: 24px;
+				font-size: 13px;
+				line-height: 15px;
+				padding: 4px 30px 0 0;
+				margin-bottom: 10px;
+				text-align: right;
+			}
+		}
+
+		&--lists{
+
+			&>p{
+				padding: 4px 0 0 10px;
+				font-size: 13px;
+				line-height: 15px;
+				margin-bottom: 10px;
+
+			}
+		}
+	}
+
+	&__bottom{
+
+		clear: both;
+
+			&>strong{
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: bold;
+
+			&>span{
+				float: right;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+.comments{
+	width: 100%;
+	clear: both;
+	
+
+	&__title{
+		overflow: hidden;
+		margin-bottom: 16px;
+
+		&--like{
+			float: right;
+			
+			&>p{
+				display: inline-block;
+				margin-left: 20px;
+
+				&>span{
+					margin-right: 5px;
+				}
+			}
+		}
+
+		&--review{
+			float: left;
+
+			&>strong{
+				font-size: 16px;
+				line-height: 18px;
+				font-weight: bold;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__content{
+		text-align: center;
+
+		&>form{
+
+			&>input{
+				width: 283px;
+				height: 43px;
+				background-color: #fdd639;
+				border: none;
+				border-radius: 21px;
+			}
+		}
+	}
+}
+
+
+#numd{
+	max-width: 448px;
+	width: 100%;
+	height: 65px;
+	border: none;
+	text-decoration: none;
+	border: 1px solid #a9a9a9;
+	margin: 10px 0 24px;
+	padding: 10px;
+}
+
+
+.item_block{
+	border: 1px solid #cfcfcf;
+	width: 100%;
+	margin: 15px 0 22px;
+	background-color: #f2fbff;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+#list{
+	max-width: 448px;
+	width: 100%;
+}
+
+.treang{
+	top: -10px;
+	left: 23px;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: url(../images/treang.png);
+}
+
+.item_container{
+	text-align: left;
+
+	&>strong{
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 16px;
+
+		&>span{
+			font-size: 11px;
+			line-height: 13px;
+			font-weight: normal;
+		}
+	}
+
+	
+}
+
+#gretta{
+	width: 100%;
+	height: 28px;
+	border: none;
+	background-color: #fff;
+	padding-left: 20px;
+	font-size: 16px;
+}
+
+
+#reservation{
+	background: url(../images/reservation.png) no-repeat;
+}
+
+#tours{
+	background: url(../images/tours.png) no-repeat;
+}
+
+#hotels{
+	background: url(../images/hotels.png) no-repeat;
+}
+
+#hotels,
+#tours,
+#reservation{
+	width: 219px;
+	height: 24px;
+}
+				
+
+
+@media only screen and (max-width: 480px){
+	
+
+	.wrapper{
+		padding: 17px 20px 34px;
+		max-width: 448px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #FFF;
+		overflow: hidden;
+	}
+
+	.header{
+
+		&__initials{
+			max-width: 200px;
+		}
+
+		&__status{
+			max-width: 277px;
+			padding: 10px 0 10px 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 440px){
+	
+	.header{
+
+		height: 165px;
+
+		&__initials{
+			max-width: 135px;
+			margin-top: 0;
+		}
+
+		&__status{
+			width: 100%;
+			margin-top: 33px;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 400px){
+	
+	.header{
+
+		&__logo{
+			width: 80px;
+			height: 82px;
+
+			&>img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+
+	.comments{
+	
+		&__content{
+
+			&>form{
+
+				&>input{
+					width: 200px;
+				}
+			}
+		}
+	}
+}
